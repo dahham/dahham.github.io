@@ -1,0 +1,27 @@
+{
+  "name": "dahham.github.io",
+  "version": "1.0.0",
+  "description": "\"Landing web page for Abdullahi Usman\"",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dahham/dahham.github.io.git"
+  },
+  "keywords": [
+    "dahham",
+    "Abdullahi",
+    "Usman",
+    "Personal",
+    "Web",
+    "page"
+  ],
+  "author": "Abdullahi Usman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dahham/dahham.github.io/issues"
+  },
+  "homepage": "https://github.com/dahham/dahham.github.io#readme"
+}
