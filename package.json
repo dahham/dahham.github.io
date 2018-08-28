@@ -26,6 +26,7 @@
   "homepage": "https://github.com/dahham/dahham.github.io#readme",
   "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
     "gulp-sass": "^4.0.1"
   }
 }
