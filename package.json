@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/dahham/dahham.github.io/issues"
   },
-  "homepage": "https://github.com/dahham/dahham.github.io#readme"
+  "homepage": "https://github.com/dahham/dahham.github.io#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
 }
