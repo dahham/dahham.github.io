@@ -34,4 +34,5 @@ gulp.task('lint', () => {
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failOnError())
+    .pipe(gulp.dest('js'))
 })
