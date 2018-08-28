@@ -2,6 +2,7 @@ const gulp = require('gulp')
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const browserSync = require('browser-sync').create()
+const eslint = require('gulp-eslint')
 
 gulp.task('default', ['styles', 'copy-html'], () => {
   gulp.watch('debug/sass/*.scss', ['styles']);
@@ -26,4 +27,11 @@ gulp.task('styles', () => {
 
 gulp.task('copy-html', () => {
   gulp.src('debug/*.html').pipe(gulp.dest(''))
+})
+
+gulp.task('lint', () => {
+  return gulp.src('debug/js/*.js')
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failOnError())
 })
