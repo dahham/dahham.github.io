@@ -7,13 +7,13 @@ const responsive_images = require('gulp-responsive-images');
 
 gulp.task('default', ['styles', 'lint', 'copy-html', 'responsive-images'], () => {
   gulp.watch('debug/sass/*.scss', ['styles']);
-  gulp.watch('debug/*.html', ['copy-html'])
+  gulp.watch('debug/*.html', ['copy-html']);
+  gulp.watch('debug/js/*.js', ['lint']);
 
   browserSync.init({
     server: ''
-  })
-
-})
+  });
+});
 
 gulp.task('styles', () => {
   gulp.src('debug/sass/*.scss').pipe(sass({
@@ -24,11 +24,11 @@ gulp.task('styles', () => {
     }))
     .pipe(gulp.dest('css'))
     .pipe(browserSync.stream())
-})
+});
 
 gulp.task('copy-html', () => {
   gulp.src('debug/*.html').pipe(gulp.dest(''))
-})
+});
 
 gulp.task('lint', () => {
   return gulp.src('debug/js/*.js')
