@@ -1,3 +1,53 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css";
 
+.dahham-jumbotron-header {
+  size: 100% 100%;
+  background: whitesmoke url('/img/logo_background.png') no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+}
 
+.dahham-img-open-quotes {
+  position: fixed 0 0;
+  size: 15% 30%;
+}
+
+.dahham-img-close_quotes {
+  position: relative;
+  size: 20% 45%;
+}
+
+.dahham-project-header {
+  text-align: center;
+  text-justify: newspaper;
+  font-size: 2.5em;
+}
+
+.dahham-promotional-apps {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dahham-promotional-apps-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100ch;
+  white-space: nowrap;
+}
+
+.dahham-header-link-text {
+  color: rgb(120, 179, 179);
+}
+
+.dahham-header-link-text:hover {
+  color: cadetblue;
+}
+
+#dahham-projects {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+a:hover {
+  border-bottom-color: black;
+}
