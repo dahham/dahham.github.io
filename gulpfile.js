@@ -3,7 +3,7 @@ const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const browserSync = require('browser-sync').create()
 const eslint = require('gulp-eslint')
-Iconst responsiveImages = require('gulp-responsive-images');
+const responsiveImages = require('gulp-responsive-images');
 
 gulp.task('default', ['styles', 'lint', 'copy-html', 'responsive-images'], () => {
   gulp.watch('debug/sass/*.scss', ['styles']);
