@@ -3,7 +3,7 @@ const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
 const browserSync = require('browser-sync').create()
 const eslint = require('gulp-eslint')
-const responsive_images = require('gulp-responsive-images');
+Iconst responsiveImages = require('gulp-responsive-images');
 
 gulp.task('default', ['styles', 'lint', 'copy-html', 'responsive-images'], () => {
   gulp.watch('debug/sass/*.scss', ['styles']);
@@ -40,7 +40,7 @@ gulp.task('lint', () => {
 
 gulp.task('responsive-images', () => {
   gulp.src('debug/img/*.png')
-    .pipe(responsive_images({
+    .pipe(responsiveImages({
       'favicon.png': {
         width: 24,
         height: 24,
