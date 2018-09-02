@@ -52,7 +52,7 @@ function getImageSourcesetFor(image, size) {
 }
 
 function fetchAndBindPromotionalApps() {
-  fetch('/data/promotional-apps.json').then(response => {
+  fetch('/data/apps.json').then(response => {
     if (response.ok) {
       return response.json();
     } else {
