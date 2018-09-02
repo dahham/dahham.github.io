@@ -42,17 +42,38 @@ gulp.task('lint', () => {
 });
 
 gulp.task('responsive-images', () => {
-  gulp.src('debug/img/*.png')
+  gulp.src('debug/img/*')
     .pipe(responsiveImages({
-      'favicon.png': {
-        width: 24,
-        height: 24,
-      },
-      'logo': {
-        width: 800,
+      '*_promotional.png': [{
+        width: 600,
         height: 300,
-        crop: true
-      }
+        suffix: '-large'
+      }, {
+        width: 400,
+        height: 200,
+        suffix: '-medium'
+      }, {
+        width: 200,
+        height: 100,
+        suffix: '-small'
+      }, {
+        width: 100,
+        height: 50,
+        suffix: '-thumbnail'
+      }],
+      'logo_background.png': [{
+        width: 1000,
+        height: 500,
+        suffix: '-large'
+      }, {
+        width: 500,
+        height: 250,
+        suffix: '-medium'
+      }, {
+        width: 200,
+        height: 100,
+        suffix: '-small'
+      }]
     }))
     .pipe(gulp.dest('img'));
 });
