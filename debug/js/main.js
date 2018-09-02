@@ -1,4 +1,4 @@
-function fetchAndDisplayProjects() {
+function fetchAndBindProjects() {
   fetch('/data/projects.json').then(response => {
     if (response.ok) {
       return response.json();
@@ -142,7 +142,7 @@ function bindViews() {
   fetchAndBindProjects();
 }
 if (document.readyState === 'loading') {
-  self.addEventListener('DOMContentLoaded', fetchAndDisplayProjects);
+  self.addEventListener('DOMContentLoaded', bindViews);
 } else {
-  fetchAndDisplayProjects();
+  bindViews();
 }
