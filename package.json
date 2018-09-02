@@ -30,5 +30,8 @@
     "gulp-autoprefixer": "^6.0.0",
     "gulp-eslint": "^5.0.0",
     "gulp-sass": "^4.0.1"
+  },
+  "devDependencies": {
+    "gulp-responsive-images": "0.0.3"
   }
 }
