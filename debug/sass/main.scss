@@ -32,7 +32,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 100ch;
-  white-space: nowrap;
+  min-height: 15ch;
 }
 
 .dahham-header-link-text {
@@ -66,6 +66,12 @@ a:hover {
 @media screen and (min-width: 500px) {
   .dahham-jumbotron-header {
     background-image: url('/img/logo_background-medium.png');
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .dahham-promotional-apps-description {
+    min-height: 0;
   }
 }
 
