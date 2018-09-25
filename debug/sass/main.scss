@@ -44,11 +44,19 @@
 }
 
 .dahham-project-number-label {
-  position: absolute;
   padding: 10px;
   margin-right: 5px;
   margin-left: 5px;
 }
+
+.dahham-featured-project-header {
+  display: flex;
+}
+
+.dahham-featured-project-title {
+  width: 90%;
+}
+
 
 #dahham-projects {
   margin-top: 20px;
