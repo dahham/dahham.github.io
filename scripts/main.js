@@ -16,15 +16,20 @@ function fetchAndBindProjects() {
         const project = document.createElement('li');
         project.setAttribute('class', 'list-group-item');
 
+        const projectHeader = document.createElement('div');
+        projectHeader.setAttribute('class', 'dahham-featured-project-header');
+
         const numberLabel = document.createElement('span');
         numberLabel.setAttribute('class', 'badge dahham-project-number-label');
         numberLabel.innerHTML = i + 1;
-        project.appendChild(numberLabel);
+        projectHeader.appendChild(numberLabel);
 
         const header = document.createElement('h4');
-        header.setAttribute('class', 'text-center');
+        header.setAttribute('class', 'text-center project-title dahham-featured-project-title');
         header.innerHTML = data['name'];
-        project.appendChild(header);
+        projectHeader.appendChild(header);
+
+        project.appendChild(projectHeader);
 
         const description = document.createElement('p');
         description.innerHTML = data['description'];
